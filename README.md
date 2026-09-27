@@ -24,7 +24,7 @@ npm run dist:linux
 - Search, type filtering, selection, confirmation, and deletion flow.
 - OpenAI-compatible endpoint configuration surface with local safe-storage capability detection.
 - Linux AppImage packaging; Windows NSIS script is prepared with `npm run dist:win`.
-- GGUF dosyaları binary model formatı olduğu için satır silme kapsamına alınmaz; metadata/tensor inceleme ayrı bir güvenli modül olarak ele alınır.
+- GGUF files are binary model formats, so line deletion is not applied to them; metadata and tensor inspection are handled as a separate safety-focused module.
 
 ## Safety and scope
 
