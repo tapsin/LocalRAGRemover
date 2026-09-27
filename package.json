@@ -1,0 +1,26 @@
+{
+  "name": "local-rag-remover",
+  "version": "0.1.0",
+  "description": "Provider-neutral AI memory and index cleanup desktop app",
+  "author": "Local RAG Remover",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "dist:linux": "electron-builder --linux AppImage",
+    "dist:win": "electron-builder --win nsis",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "electron": "^38.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.localragremover.app",
+    "productName": "Local RAG Remover",
+    "files": ["electron/**/*", "src/**/*", "PRODUCT.md", "package.json"],
+    "linux": { "target": ["AppImage"], "category": "Utility" },
+    "win": { "target": ["nsis"] },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true }
+  }
+}
