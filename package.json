@@ -8,6 +8,7 @@
     "start": "electron .",
     "dev": "electron .",
     "dist:linux": "electron-builder --linux AppImage",
+    "dist:windows": "electron-builder --win nsis",
     "dist:win": "electron-builder --win nsis",
     "test": "node --test"
   },
